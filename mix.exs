@@ -1,9 +1,9 @@
-defmodule SimpleDataflow.MixProject do
+defmodule Pratipad.Example.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :simple_dataflow,
+      app: :pratipad_example,
       version: "0.1.0",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
@@ -15,15 +15,15 @@ defmodule SimpleDataflow.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {SimpleDataflow.Application, []}
+      mod: {Pratipad.Example.Application, []}
     ]
   end
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:pratipad, path: "../../", override: true},
-      {:off_broadway_otp_distribution, path: "../../../off_broadway_otp_distribution", override: true}
+      {:pratipad, path: "../pratipad", override: true},
+      {:off_broadway_otp_distribution, path: "../off_broadway_otp_distribution", override: true}
     ]
   end
 end

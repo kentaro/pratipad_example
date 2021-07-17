@@ -1,4 +1,4 @@
-defmodule SimpleDataflow.Application do
+defmodule Pratipad.Example.Application do
   @moduledoc false
 
   use Application
@@ -9,7 +9,7 @@ defmodule SimpleDataflow.Application do
       {Pratipad, nil}
     ]
 
-    opts = [strategy: :one_for_one, name: SimpleDataflow.Supervisor]
+    opts = [strategy: :one_for_one, name: Pratipad.Example.Supervisor]
     Supervisor.start_link(children, opts)
   end
 end

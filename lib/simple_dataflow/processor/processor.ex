@@ -1,4 +1,4 @@
-defmodule SimpleDataflow.Processor do
+defmodule Pratipad.Example.Processor.AddDateTime do
   use Pratipad.Processor
 
   def process(message) do
