@@ -2,7 +2,7 @@ defmodule Pratipad.Example.Processor.AddDateTime do
   use Pratipad.Processor
 
   def process(message) do
-    "[#{today()}] #{message}"
+    Map.put(message, :datetime, today())
   end
 
   defp today() do
