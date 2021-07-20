@@ -7,12 +7,12 @@ config :pratipad,
       producer: [
         module:
           {OffBroadwayOtpDistribution.Producer,
-            [
-           mode: :push,
-           receiver: [
-             name: :pratipad_forwarder_input
-           ]
-         ]}
+           [
+             mode: :push,
+             receiver: [
+               name: :pratipad_forwarder_input
+             ]
+           ]}
       ],
       processors: [
         default: [concurrency: 1]
@@ -30,10 +30,10 @@ config :pratipad,
       producer: [
         module:
           {OffBroadwayOtpDistribution.Producer,
-            [
-              mode: :push,
-              receiver: [
-              name: :pratipad_backwarder_input
+           [
+             mode: :push,
+             receiver: [
+               name: :pratipad_backwarder_input
              ]
            ]}
       ],
