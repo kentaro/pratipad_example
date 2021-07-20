@@ -1,7 +1,7 @@
 import Config
 
 config :pratipad,
-  dataflow: Pratipad.Example.Dataflow.Minimum,
+  dataflow: Pratipad.Example.Dataflow,
   forward: [
     input: [
       producer: [

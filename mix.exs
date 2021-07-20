@@ -22,6 +22,7 @@ defmodule Pratipad.Example.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:smallex, "~> 0.2.3"},
       {:pratipad, path: "../pratipad", override: true},
       {:off_broadway_otp_distribution, path: "../off_broadway_otp_distribution", override: true}
     ]
