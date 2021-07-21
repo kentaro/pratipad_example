@@ -4,6 +4,6 @@ defmodule Pratipad.Example.Dataflow do
   alias Pratipad.Example.Processor.Precipitation
 
   def declare() do
-    Push <~> Precipitation <~> Output
+    Demand <~> Precipitation <~> Output
   end
 end
