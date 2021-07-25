@@ -1,10 +1,12 @@
 %{
+  "artificery": {:hex, :artificery, "0.4.3", "0bc4260f988dcb9dda4b23f9fc3c6c8b99a6220a331534fdf5bf2fd0d4333b02", [:mix], [], "hexpm", "12e95333a30e20884e937abdbefa3e7f5e05609c2ba8cf37b33f000b9ffc0504"},
   "broadway": {:hex, :broadway, "0.6.2", "ef8e0d257420c72f0e600958cf95556835d9921ad14be333493083226458791a", [:mix], [{:gen_stage, "~> 1.0", [hex: :gen_stage, repo: "hexpm", optional: false]}, {:telemetry, "~> 0.4.0", [hex: :telemetry, repo: "hexpm", optional: false]}], "hexpm", "f4f93704304a736c984cd6ed884f697415f68eb50906f4dc5d641926366ad8fa"},
   "certifi": {:hex, :certifi, "2.6.1", "dbab8e5e155a0763eea978c913ca280a6b544bfa115633fa20249c3d396d9493", [:rebar3], [], "hexpm", "524c97b4991b3849dd5c17a631223896272c6b0af446778ba4675a1dff53bb7e"},
   "cll": {:hex, :cll, "0.1.1", "1acb51b9e34f631a3cd61ac3d66817ad6a9f283a28d8c0057f235079d696b4ee", [:mix], [], "hexpm", "293434c730b34bbee79f7505a49fbb5c8704500dc9a6a448cb0f007450de3215"},
   "combine": {:hex, :combine, "0.10.0", "eff8224eeb56498a2af13011d142c5e7997a80c8f5b97c499f84c841032e429f", [:mix], [], "hexpm", "1b1dbc1790073076580d0d1d64e42eae2366583e7aecd455d1215b0d16f2451b"},
   "csv": {:hex, :csv, "2.4.1", "50e32749953b6bf9818dbfed81cf1190e38cdf24f95891303108087486c5925e", [:mix], [{:parallel_stream, "~> 1.0.4", [hex: :parallel_stream, repo: "hexpm", optional: false]}], "hexpm", "54508938ac67e27966b10ef49606e3ad5995d665d7fc2688efb3eab1307c9079"},
   "decimal": {:hex, :decimal, "1.9.0", "83e8daf59631d632b171faabafb4a9f4242c514b0a06ba3df493951c08f64d07", [:mix], [], "hexpm", "b1f2343568eed6928f3e751cf2dffde95bfaa19dd95d09e8a9ea92ccfd6f7d85"},
+  "distillery": {:hex, :distillery, "2.1.1", "f9332afc2eec8a1a2b86f22429e068ef35f84a93ea1718265e740d90dd367814", [:mix], [{:artificery, "~> 0.2", [hex: :artificery, repo: "hexpm", optional: false]}], "hexpm", "bbc7008b0161a6f130d8d903b5b3232351fccc9c31a991f8fcbf2a12ace22995"},
   "excelion": {:hex, :excelion, "0.0.5", "aced194b1a6ce191e3d5848d4d9aa42f6e929e795e33487578c0dd4289762349", [:mix], [{:xlsx_parser, "~> 0.0.8", [hex: :xlsx_parser, repo: "hexpm", optional: false]}], "hexpm", "f3f794ad2fc9c072108f83d72269c859f2c725fc8aa0059cff51d37e695df27e"},
   "gen_stage": {:hex, :gen_stage, "1.1.0", "dd0c0f8d2f3b993fdbd3d58e94abbe65380f4e78bdee3fa93d5618d7d14abe60", [:mix], [], "hexpm", "7f2b36a6d02f7ef2ba410733b540ec423af65ec9c99f3d1083da508aca3b9305"},
   "gettext": {:hex, :gettext, "0.18.2", "7df3ea191bb56c0309c00a783334b288d08a879f53a7014341284635850a6e55", [:mix], [], "hexpm", "f9f537b13d4fdd30f3039d33cb80144c3aa1f8d9698e47d7bcbcc8df93b1f5c5"},
