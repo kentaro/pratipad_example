@@ -37,7 +37,8 @@ defmodule Pratipad.Example.Processor.Precipitation do
       state.precipitation
     else
       # Thanks to: JJWD - アメダス最新気象データ API サービス https://jjwd.info/index.html
-      Json.get("https://jjwd.info", "/api/v2/station/44132")["station"]["preall"]["precip_1h"] / 1
+      precipiattion = Json.get("https://jjwd.info", "/api/v2/station/44132")["station"]["preall"]["precip_1h"]
+      precipiattion / 1
     end
   end
 end
