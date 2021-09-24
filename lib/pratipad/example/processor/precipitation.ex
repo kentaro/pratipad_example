@@ -17,8 +17,8 @@ defmodule Pratipad.Example.Processor.Precipitation do
   end
 
   @impl Processor
-  def process(message, state) do
-    Map.put(message, :precipitation, retrieve_precipitation(state))
+  def process(data, state) do
+    Map.put(data, :precipitation, retrieve_precipitation(state))
   end
 
   @impl GenServer
