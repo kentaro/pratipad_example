@@ -5,6 +5,8 @@ defmodule Pratipad.Example.Application do
 
   @impl true
   def start(_type, _args) do
+    connect_node()
+
     children = [
       # Start the Telemetry supervisor
       PratipadExampleWeb.Telemetry,
@@ -27,5 +29,10 @@ defmodule Pratipad.Example.Application do
   def config_change(changed, _new, removed) do
     PratipadExampleWeb.Endpoint.config_change(changed, removed)
     :ok
+  end
+
+  defp connect_node() do
+    server_node = Application.fetch_env!(:pratipad_example, :server_node)
+    Node.connect(server_node)
   end
 end

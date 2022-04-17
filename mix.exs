@@ -52,7 +52,6 @@ defmodule PratipadExample.MixProject do
       {:pratipad, path: "../pratipad", override: true},
       {:off_broadway_otp_distribution, path: "../off_broadway_otp_distribution", override: true},
       {:broadway_dashboard, "~> 0.2.0"}
-
     ]
   end
 

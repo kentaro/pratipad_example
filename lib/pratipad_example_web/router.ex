@@ -37,6 +37,7 @@ defmodule PratipadExampleWeb.Router do
 
     scope "/" do
       pipe_through :browser
+
       live_dashboard "/dashboard",
         metrics: PratipadExampleWeb.Telemetry,
         additional_pages: [

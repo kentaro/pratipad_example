@@ -49,7 +49,11 @@ config :phoenix, :json_library, Jason
 import_config "#{config_env()}.exs"
 
 # Configures Pratipad
+config :pratipad_example,
+  server_node: :"server@server.pratipad.local"
+
 config :pratipad,
+  server_name: :pratipad_example_server,
   dataflow: Pratipad.Example.Dataflow,
 
   # Optional settings only for demand mode
