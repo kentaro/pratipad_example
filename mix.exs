@@ -48,7 +48,7 @@ defmodule PratipadExample.MixProject do
       {:plug_cowboy, "~> 2.5"},
 
       # Pratipad
-      {:smallex, "~> 0.2.3"},
+      {:req, "~> 0.2.2"},
       {:pratipad, path: "../pratipad", override: true},
       {:off_broadway_otp_distribution, path: "../off_broadway_otp_distribution", override: true},
       {:broadway_dashboard, "~> 0.2.0"}

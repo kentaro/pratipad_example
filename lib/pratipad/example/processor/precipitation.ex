@@ -36,11 +36,19 @@ defmodule Pratipad.Example.Processor.Precipitation do
     if state.precipitation do
       state.precipitation
     else
-      # Thanks to: JJWD - アメダス最新気象データ API サービス https://jjwd.info/index.html
-      precipiattion =
-        Json.get("https://jjwd.info", "/api/v2/station/44132")["station"]["preall"]["precip_1h"]
+      # 気象庁｜最新の気象データ | CSVダウンロード | データ部掲載内容
+      # https://www.data.jma.go.jp/obd/stats/data/mdrr/docs/csv_dl_format_prenh.html
+      precipitation =
+        "https://www.data.jma.go.jp/obd/stats/data/mdrr/pre_rct/alltable/pre1h00_rct.csv"
+        |> Req.get!()
+        |> Map.get(:body)
+        |> Enum.find(fn [num | _] ->
+          num == "44132"
+        end)
+        |> Enum.at(10)
+        |> String.to_integer()
 
-      precipiattion / 1
+      precipitation / 1
     end
   end
 end
