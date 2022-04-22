@@ -45,8 +45,8 @@ defmodule Pratipad.Example.Processor.Precipitation do
         |> Enum.find(fn [num | _] ->
           num == "44132"
         end)
-        |> Enum.at(10)
-        |> String.to_integer()
+        |> Enum.at(9)
+        |> String.to_float()
 
       precipitation / 1
     end
